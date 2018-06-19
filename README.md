@@ -1,11 +1,19 @@
 # react-state-component
-> Render function that exposes an additional external state
+> render function that exposes an additional external state
 
 [![npm package][npm-badge]][npm]
 
 ### Usage
 
+```sh
+$ npm install react-state-component --save
+```
+
 ```js
+import State from 'react-state-component'
+
+...
+
 <State initial={{ count: 0 }}>
   {({ state, setState }) => (
     <Fragment>
@@ -20,6 +28,8 @@
 Alternatively you could use a render prop
 
 ```js
+import State from 'react-state-component'
+
 ...
 
 <State
@@ -32,8 +42,6 @@ Alternatively you could use a render prop
     </Fragment>
   )}
 />
-
-...
 ```
 
 [npm-badge]: https://img.shields.io/npm/v/react-state-component.png?style=flat-square
